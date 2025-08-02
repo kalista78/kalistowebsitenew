@@ -1,0 +1,76 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# server dependencies
+/server/node_modules
+/server/dist
+
+# testing
+/coverage
+/cypress/videos
+/cypress/screenshots
+
+# production
+/build
+/dist
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# local env files
+.env
+.env.*
+!.env.example
+
+# editor directories and files
+.idea
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Yarn
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+.pnp.*
+
+# Cache directories
+.cache
+.parcel-cache
+
+# OS generated files
+Thumbs.db
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+
+# Railway
+.railway
+
+# Temporary files
+*.tmp
+*.temp
+
+# Keep package-lock.json for dependency consistency
+# Uncomment below if you prefer yarn.lock
+# yarn.lock

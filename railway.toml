@@ -1,0 +1,18 @@
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "Dockerfile"
+
+[deploy]
+startCommand = "npm run start"
+healthcheckPath = "/api/health"
+healthcheckTimeout = 300
+restartPolicyType = "never"
+numReplicas = 1
+
+[[services]]
+name = "kalisto"
+internal_port = 3000
+protocols = ["http"]
+
+[environments]
+production.numReplicas = 1 
